@@ -142,15 +142,14 @@
 // 1. DATA 분리 (현장 목록 데이터)
 // ==========================================
 const SITE_DATA = [
-  // 1팀 (하남, 성남)
+  // 1팀 (하남, 성남) (수정경찰서 주소 변경 및 5번 삭제 반영)
   { team: "1팀 (하남, 성남)", station: "하남경찰서", name: "하남 교산대우건설 A-2블럭", addr: "경기도 하남시 천현동 130 일원", office: "", branch: "북부" },
   { team: "1팀 (하남, 성남)", station: "하남경찰서", name: "연세병원", addr: "경기도 하남시 학암동 649", office: "", branch: "북부" },
   { team: "1팀 (하남, 성남)", station: "하남경찰서", name: "하남의료시설현장", addr: "경기도 하남시 601-1", office: "", branch: "북부" },
-  { team: "1팀 (하남, 성남)", station: "성남수정경찰서", name: "위례 포스코", addr: "경기도 성남시 수정구 창곡동 위례3", office: "", branch: "북부" },
+  { team: "1팀 (하남, 성남)", station: "성남수정경찰서", name: "위례 포스코", addr: "경기도 성남시 수정구 창곡동 533", office: "", branch: "북부" },
   { team: "1팀 (하남, 성남)", station: "성남수정경찰서", name: "성남 KR산업", addr: "경기도 성남시 수정구 복정동 87", office: "", branch: "북부" },
-  { team: "1팀 (하남, 성남)", station: "성남수정경찰서", name: "코오롱건설", addr: "경기도 성남시 수정구 금토동 일원", office: "", branch: "북부" },
-  { team: "1팀 (하남, 성남)", station: "성남수정경찰서", name: "성남 금토동 포스코현장", addr: "경기도 성남시 수정구 금토동", office: "", branch: "북부" },
-  { team: "1팀 (하남, 성남)", station: "성남수정경찰서", name: "상업시설", addr: "경기도 성남시 수정구 신촌동 184-2", office: "", branch: "북부" },
+  { team: "1팀 (하남, 성남)", station: "성남수정경찰서", name: "코오롱건설", addr: "경기도 성남시 수정구 금토동 296-3", office: "", branch: "북부" },
+  { team: "1팀 (하남, 성남)", station: "성남수정경찰서", name: "성남 금토동 포스코현장", addr: "경기도 성남시 수정구 금토동 273-3", office: "", branch: "북부" },
   { team: "1팀 (하남, 성남)", station: "성남중원경찰서", name: "남성건설", addr: "경기도 성남시 중원구 성남동 2314", office: "", branch: "북부" },
   { team: "1팀 (하남, 성남)", station: "성남중원경찰서", name: "성남동 LH", addr: "경기도 성남시 중원구 성남동 3199", office: "", branch: "북부" },
   { team: "1팀 (하남, 성남)", station: "성남중원경찰서", name: "성남동 캠코이에스 오피스텔", addr: "경기도 성남시 중원구 성남동 2486", office: "", branch: "북부" },
@@ -163,14 +162,13 @@ const SITE_DATA = [
   { team: "2팀 (분당)", station: "분당경찰서", name: "성남 대장동 (사회복지시설)", addr: "경기도 성남시 분당구 대장동 일원", office: "", branch: "북부" },
   { team: "2팀 (분당)", station: "분당경찰서", name: "롯데백화점 증축 및 리모델링", addr: "경기도 성남시 분당구 수내동", office: "", branch: "북부" },
 
-  // 3팀 (안양, 과천)
+  // 3팀 (안양, 과천) (과천경찰서 1번 삭제 반영)
   { team: "3팀 (안양, 과천)", station: "안양동안경찰서", name: "평촌동 르씨엘 롯데건설", addr: "경기도 안양시 동안구 평촌동 934", office: "", branch: "북서" },
   { team: "3팀 (안양, 과천)", station: "안양만안경찰서", name: "안양 만안구 상록지구 GS건설", addr: "경기도 안양시 만안구 안양동 394-10", office: "", branch: "북서" },
   { team: "3팀 (안양, 과천)", station: "안양만안경찰서", name: "수영 로지콘", addr: "경기도 안양시 만안구 안양동 537-1", office: "", branch: "북서" },
-  { team: "3팀 (안양, 과천)", station: "과천경찰서", name: "과천 주공 4단지 재개발 GS건설", addr: "경기도 과천시 별양동 과천주공4단지", office: "", branch: "북서" },
   { team: "3팀 (안양, 과천)", station: "과천경찰서", name: "과천지식산업5블럭 효성건설", addr: "경기도 과천시 갈현동 산37-9", office: "", branch: "북서" },
 
-  // 4팀 (의왕, 군포) (의왕 1,2번 삭제)
+  // 4팀 (의왕, 군포)
   { team: "4팀 (의왕, 군포)", station: "의왕경찰서", name: "의왕 고천 나구역 SK건설", addr: "경기도 의왕시 고천동 265 일원", office: "", branch: "북서" },
   { team: "4팀 (의왕, 군포)", station: "의왕경찰서", name: "초평동 제일풍경체", addr: "경기도 의왕시 초평동 71-7 일원", office: "", branch: "북서" },
   { team: "4팀 (의왕, 군포)", station: "의왕경찰서", name: "의왕 고천나구 현대산업개발", addr: "경기도 의왕시 고천동 265", office: "", branch: "북서" },
@@ -191,7 +189,7 @@ const SITE_DATA = [
   { team: "5팀 (수원)", station: "수원팔달경찰서", name: "대흥건설", addr: "경기도 수원시 팔달구 인계동 939-2", office: "", branch: "중부" },
   { team: "5팀 (수원)", station: "수원장안경찰서", name: "창성종합건설", addr: "경기도 수원시 장안구 연무동 240-3", office: "", branch: "중부" },
 
-  // 6팀 (용인) (용인동부 5번 주소 수정)
+  // 6팀 (용인)
   { team: "6팀 (용인)", station: "용인동부경찰서", name: "고림2지구 동문건설", addr: "경기도 용인시 처인구 고림동 620", office: "", branch: "용인" },
   { team: "6팀 (용인)", station: "용인동부경찰서", name: "용인클러스터1차 기숙사 동부건설", addr: "경기도 용인시 처인구 원삼면 독성리 551-6", office: "", branch: "용인" },
   { team: "6팀 (용인)", station: "용인동부경찰서", name: "양지 서희스타힐스 하이뷰 서희건설", addr: "경기도 용인시 처인구 양지면 양지리 산 105-8", office: "", branch: "용인" },
@@ -201,7 +199,7 @@ const SITE_DATA = [
   { team: "6팀 (용인)", station: "용인동부경찰서", name: "원삼 반도체 커뮤니티센터", addr: "경기도 용인시 처인구 원삼면 독성리 1025", office: "경기도 용인시 처인구 원삼면 고당리 90-11", branch: "용인" },
   { team: "6팀 (용인)", station: "용인서부경찰서", name: "신광교클라우드 현대엔지니어링", addr: "경기도 용인시 기흥구 영덕동 784", office: "", branch: "용인" },
 
-  // 7팀 (평택, 오산) (오산 2번 주소 수정)
+  // 7팀 (평택, 오산)
   { team: "7팀 (평택, 오산)", station: "평택경찰서", name: "평택고덕 ABC36블럭 우미건설", addr: "경기도 평택시 고덕동 142", office: "", branch: "남부" },
   { team: "7팀 (평택, 오산)", station: "평택경찰서", name: "평택고덕 ABC37블럭 태왕건설", addr: "경기도 평택시 고덕동 산106-1", office: "", branch: "남부" },
   { team: "7팀 (평택, 오산)", station: "평택경찰서", name: "평택고덕 ABC61블럭 제일건설", addr: "경기도 평택시 고덕동 산340", office: "", branch: "남부" },
@@ -233,7 +231,7 @@ const SITE_DATA = [
   { team: "8팀 (화성)", station: "화성서부경찰서", name: "향남kcc", addr: "경기도 화성시 향남읍 하길리 404", office: "", branch: "남서" },
   { team: "8팀 (화성)", station: "화성서부경찰서", name: "동화 2지구 지역주택 조합", addr: "경기도 화성시 봉담읍 동화리 238-31", office: "", branch: "남서" },
 
-  // 9팀 (안산, 시흥) (시흥 4,5번 삭제)
+  // 9팀 (안산, 시흥)
   { team: "9팀 (안산, 시흥)", station: "안산단원경찰서", name: "시화국가데이터단지 (현대건설)", addr: "경기도 안산시 단원구 성곡동 712", office: "", branch: "서부" },
   { team: "9팀 (안산, 시흥)", station: "안산단원경찰서", name: "안산신길2지구 동문건설 A-6", addr: "경기도 안산시 단원구 신길2지구 A-6", office: "", branch: "서부" },
   { team: "9팀 (안산, 시흥)", station: "안산단원경찰서", name: "안산 SK데이터센터", addr: "경기도 안산시 단원구 성곡동 668-1", office: "경기도 안산시 단원구 번영로 142 2층", branch: "서부" },
